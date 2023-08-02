@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="../src/css/output.css">
+        <link rel="stylesheet" href="../src/altas-assets/assets/myStyle.css">
+        <script src="https://kit.fontawesome.com/7f7b6f90d4.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="../src/altas-assets/assets/css- colors/style-switcher.css">
+        <link rel="stylesheet" href="../src/altas-assets/assets/css- colors/color-1.css" class="alternate-style" title="color-1" disabled>
+        <link rel="stylesheet" href="../src/altas-assets/assets/css- colors/color-2.css" class="alternate-style" title="color-2" disabled>
+        <link rel="stylesheet" href="../src/altas-assets/assets/css- colors/color-3.css" class="alternate-style" title="color-3" >
+        <link rel="stylesheet" href="../src/altas-assets/assets/css- colors/color-4.css" class="alternate-style" title="color-4" disabled>
+        <link rel="stylesheet" href="../src/altas-assets/assets/css- colors/color-5.css" class="alternate-style" title="color-5" disabled>
+       
+        
+    </head>
+    <body>
+        <div class="nav-toggler block md:hidden justify-center absolute items-center" onclick="toggleMenu()">
+           <span></span>
+        </div>
+        <div id="navbar" class="navbar-dropdown hidden md:hidden px-5 pt-20 ">
+            <h1 class="text-4xl relative"><a href="#"><span id="name">A</span>tlas</a></h1>
+            
+            <div class="flex flex-col pt-10 font-bold ">
+                <ul class="list-z-index">
+                    <li class="border-b border-gray-300  mb-2 py-5 "><i class="fa-solid fa-house mx-6 cursor-pointer"></i><a href="index-portfolio.html" >Home</a></li>
+                    <li class="border-b border-gray-300  mb-2 py-5"><i class="fa-solid fa-user mx-6 cursor-pointer"></i><a href="about.html">About</a></li>
+                    <li class="border-b border-gray-300  mb-2 py-5"><i class="fa-solid fa-bars mx-6 cursor-pointer" aria-label="menu"></i></i><a href="Services.html">Services</a></li>
+                    <li class="border-b border-gray-300 mb-2 py-5"><i class="fa-solid fa-briefcase mx-6 cursor-pointer"></i><a href="Portfolio.html">Portfolio</a></li>
+                    <li ><i class="fa-solid fa-address-book mx-6 py-5 cursor-pointer"></i><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="grid grid-cols-2">            
+                <div  class=" navbar navbar-index hidden md:block px-24 pt-10">
+                    <h1 class="text-4xl relative"><a href="#"><span id="name">A</span>tlas</a></h1>
+                   
+                    <div class="flex flex-col pt-32 font-bold w-48">
+                        <ul>
+                            <li class="border-b border-gray-300 pb-1 mb-2"><i class="fa-solid fa-house mr-4 cursor-pointer active"></i><a href="#home" class="active">Home</a></li>
+                            <li class="border-b border-gray-300 pb-1 mb-2"><i class="fa-solid fa-user mr-4 cursor-pointer"></i><a href="about.html">About</a></li>
+                            <li class="border-b border-gray-300 pb-1 mb-2"><i class="fa-solid fa-bars mr-4 cursor-pointer" aria-label="menu"></i></i><a href="Services.html">Services</a></li>
+                            <li class="border-b border-gray-300 pb-1 mb-2"><i class="fa-solid fa-briefcase mr-4 cursor-pointer"></i><a href="Portfolio.html">Portfolio</a></li>
+                            <li ><i class="fa-solid fa-address-book mr-4 cursor-pointer"></i><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div id="home" class="right-section block lg:grid pt-40 lg:pt-0 px-5 justify-center h-screen align-middle items-center  grid-cols-1 md:grid-cols-2 ">
+                    <div class="description w-full ">
+                        <h1 class="font-semibold text-2xl">Hello, my name is <span id="Alimi-Mousaad" class=" text-4xl font-semibold">Alimi Mousaad</span></h1>
+                        <h1 class="font-semibold text-2xl">I'm a <span class="profession font-semibold">web Designer</span></h1>
+                        <p class="mb-10 mt-4 paragraph w-full lg:w-2/3">I'm a web designer with extensive experience for over 10 years. My expertise is to  create websites, graphics and many more...</p>
+                        <button class="btn text-white rounded-full px-4 py-2">
+                            More about me
+                        </button>
+                    </div>
+                    <div class="hero hidden lg:block w-full mx-14">
+                        <img src="../src/altas-assets/assets/images/hero.jpg " class="w-2/4 rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="style-switcher fixed right-12 top-6 p-6 rounded-md  ">
+            <div class="style-switcher-toggler s-icon absolute h-10 w-10 text-center right-full mr-6 cursor-pointer rounded-full" onclick="styleSwitch()">
+                <i class="fa-solid fa-gear fa-spin"></i>
+            </div>
+            <div class="day-night s-icon absolute h-10 w-10 text-center right-full mr-6 cursor-pointer rounded-full top-16 ">
+                <i class="fa-solid "></i>
+            </div>
+            <h4 class=" font-semibold" >Theme Colors</h4>
+            <div class="colors flex flex-wrap justify-between mt-2">
+                <span class="color-1 inline-block  rounded-full cursor-pointer" onclick="setActiveStyle('color-1')"></span>
+                <span class="color-2 inline-block  rounded-full cursor-pointer" onclick="setActiveStyle('color-2')"></span>
+                <span class="color-3 inline-block  rounded-full cursor-pointer" onclick="setActiveStyle('color-3')"></span>
+                <span class="color-4 inline-block  rounded-full cursor-pointer" onclick="setActiveStyle('color-4')"></span>
+                <span class="color-5 inline-block  rounded-full cursor-pointer" onclick="setActiveStyle('color-5')"></span>
+            </div>
+        </div>
+        <script>
+            let nav = document.getElementById('navbar');
+            function toggleMenu(){
+                nav.classList.toggle('hidden');
+            }
+            let switcherStyle = document.querySelector('style-switcher-toggler')
+            function styleSwitch(){
+                document.querySelector(".style-switcher").classList.toggle("open");
+
+            }
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+         <script src="../src/altas-assets/assets/js/script.js"></script>
+         <script src="../src/altas-assets/assets/js/style-switcher.js"></script>
+    </body>
+</html>

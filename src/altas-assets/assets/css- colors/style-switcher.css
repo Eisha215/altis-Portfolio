@@ -1,0 +1,57 @@
+.style-switcher{
+    width: 230px;
+    border: 1px solid var(--bg-black-100);
+    background-color: var(--bg-black-500);
+    z-index: 101;
+    transition: all 0.3s ease;
+    transform: translateX(120%);
+    z-index: 111;
+}
+.right-section{
+z-index: 10;
+}
+.style-switcher.open{
+    transform: translateX(-25px);
+}
+
+.style-switcher .s-icon{
+    font-size: 20px;
+    background-color: var(--bg-black-500);
+    color: var(--text-black-900);
+    border: 1px solid var(--bg-black-100);
+    transition: all 0.3s ease;
+
+
+}
+.style-switcher .s-icon i{
+    line-height: 40px;
+}
+.style-switcher .style-switcher-toggler{
+    top:0;
+}
+.style-switcher h4{
+    color: var(--text-black-700);
+}
+.style-switcher .colors span{
+    
+    width: 30px;
+    height: 30px;
+}
+.style-switcher .color-1{
+    background-color:#ec1839;
+}
+.style-switcher .color-2{
+    background-color:#fa5b0f;
+}
+.style-switcher .color-3{
+    background-color:#37b182;
+}
+.style-switcher .color-4{
+    background-color:#1854b4;
+}
+.style-switcher .color-5{
+    background-color:#f021b2;
+}
+/* .right-section,.about-section,.services-section,.portfolio-section,.contact-section,.experience{
+    background-color: transparent;
+} */
